@@ -68,3 +68,75 @@ p {
   50% {background-position: 100% 50%;}
   100% {background-position: 0% 50%;}
 }
+/* حركة للنصوص */
+h1 {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* بطاقات */
+.card {
+  background: rgba(255,255,255,0.2);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  color: #fff;
+}
+
+/* فوتر */
+footer {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #fff;
+  opacity: 0.8;
+}/* جعل الصفحة كلها متوسطة عمودياً */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+/* تنسيق أفضل للصور */
+.my-photo {
+  border: 3px solid #fff;
+  transition: 0.3s;
+}
+
+.my-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}.card {
+  backdrop-filter: blur(5px); /* يضيف تأثير زجاجي */
+/* 🌙 وضع ليلي (دارك مود) */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #eee;
+  }
+
+  .card {
+    background: rgba(255, 255, 255, 0.05);
+    color: #eee;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  }
+
+  .btn-instagram {
+    background: #833ab4;
+  }
+
+  .btn-instagram:hover {
+    background: #e1306c;
+  }
+
+  footer {
+    color: #aaa;
+  }
+}}
