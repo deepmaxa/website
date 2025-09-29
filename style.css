@@ -1,0 +1,70 @@
+/* إعدادات أساسية للصفحة */
+body {
+  margin: 0;
+  font-family: "Cairo", sans-serif;
+  color: white;
+  text-align: center;
+
+  /* خلفية متدرجة بألوان انستقرام + حركة */
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+
+  padding: 20px;
+}
+
+/* العنوان */
+h1 {
+  font-size: 36px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  margin-bottom: 10px;
+}
+
+/* النص */
+p {
+  font-size: 20px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  margin-bottom: 20px;
+}
+
+/* الصورة */
+.my-photo {
+  width: 250px;
+  border-radius: 15px;
+  margin: 20px 0;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+}
+
+/* زر انستقرام */
+.btn-instagram {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #E1306C;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+.btn-instagram:hover {
+  background: #C13584;
+  transform: scale(1.05);
+}
+
+/* أيقونة الانستقرام داخل الزر */
+.btn-instagram .icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* أنيميشن الخلفية */
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
